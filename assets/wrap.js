@@ -16,7 +16,8 @@ class BudouXParser{constructor(model){this.model=new Map(Object.entries(model).m
 const budouxParser=new BudouXParser(BUDOUX_JA_MODEL);
 const ASCII_WORD=/[A-Za-z0-9]/;
 // 対象セレクタ。変更する場合はCSS側の対応セレクタも揃えること
-const BUDOUX_WRAP_SELECTOR='h1,h2,h3,h4,h5,h6,p,li,td,th,dt,dd,blockquote,figcaption';
+// span,a を含む: eyebrow/a-catch/a-meta/f-time等のspanクラスやナビのaタグも文節途中改行の対象にするため
+const BUDOUX_WRAP_SELECTOR='h1,h2,h3,h4,h5,h6,p,li,td,th,dt,dd,blockquote,figcaption,span,a';
 function insertPhraseBreaks(root){
  (root||document).querySelectorAll(BUDOUX_WRAP_SELECTOR).forEach(elm=>{
   Array.from(elm.childNodes).forEach(node=>{

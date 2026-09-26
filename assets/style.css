@@ -49,7 +49,7 @@ a:hover{color:var(--accent-ink);}
   font-weight:900;font-size:16px;letter-spacing:.02em;color:var(--ink);
   text-decoration:none;
 }
-.brand-mark .chip{width:10px;height:10px;background:var(--accent);flex:none;}
+.brand-mark .chip{width:10px;height:10px;background:var(--ink);flex:none;} /* 事務所ロゴは常に墨固定。--accentはアーティストごとのページ内アクセントにのみ使う（ロゴが訪問先ページで色変わりしないように） */
 .brand-mark:hover{color:var(--ink);}
 .header-nav{display:flex;gap:20px;font-size:13px;font-weight:700;letter-spacing:.08em;}
 .header-nav a{color:var(--muted);text-decoration:none;}
@@ -132,7 +132,7 @@ p{margin:0 0 14px;}
 .song-card .s-artist a:hover{color:var(--accent-ink);}
 .song-card .s-lyrics{font-size:14px;color:var(--text);white-space:pre-line;line-height:1.9;margin:0;}
 .song-card .s-status{
-  font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--muted);
+  font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--muted);
   border:1px dashed var(--rule);padding:6px 10px;white-space:nowrap;align-self:start;
 }
 @media (max-width:640px){
@@ -140,14 +140,7 @@ p{margin:0 0 14px;}
   .song-card .s-status{justify-self:start;}
 }
 
-/* ==== 空きスロット（音源・動画・リンク） ==== */
-.media-slot{
-  border:1px dashed var(--rule);
-  aspect-ratio:16/9;
-  display:flex;align-items:center;justify-content:center;
-  color:var(--muted);font-size:13px;font-weight:700;letter-spacing:.06em;
-  background:var(--bg);
-}
+/* ==== 空きスロット（配信・動画・SNSリンク） ==== */
 .link-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;background:var(--rule);margin-top:1px;}
 .link-card{
   background:var(--bg);padding:18px 16px;border:1px dashed transparent;
@@ -168,6 +161,12 @@ p{margin:0 0 14px;}
   vertical-align:top;
 }
 .fact-table th{color:var(--muted);font-weight:700;width:9em;white-space:nowrap;}
+@media (max-width:640px){
+  .fact-table,.fact-table tbody,.fact-table tr,.fact-table th,.fact-table td{display:block;width:auto;}
+  .fact-table tr{padding:10px 0;border-bottom:1px solid var(--rule);}
+  .fact-table th{white-space:normal;padding:0 0 4px;border-bottom:none;}
+  .fact-table td{padding:0;border-bottom:none;}
+}
 
 .pillar-list{list-style:none;margin:0;padding:0;display:grid;gap:14px;}
 .pillar-list li{padding-left:28px;position:relative;}
