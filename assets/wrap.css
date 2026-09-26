@@ -1,0 +1,12 @@
+/*
+  wrap.css — 日本語テキストの「文節・単語の途中」での折り返しを防ぐスタイル。
+  出典: ~/.claude/skills/shiryo/assets/budoux-wrap.html の <style> 部分をそのまま切り出したもの。
+  対をなす wrap.js（BudouXの分かち書き）とセットで使う。
+*/
+h1,h2,h3,h4,h5,h6,p,li,td,th,dt,dd,blockquote,figcaption{
+  word-break:keep-all;
+  overflow-wrap:anywhere;
+  line-break:strict;
+}
+h1,h2,h3,h4,h5,h6{text-wrap:balance;}
+p,li,td,th,dt,dd,blockquote,figcaption{text-wrap:pretty;}

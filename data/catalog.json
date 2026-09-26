@@ -1,0 +1,57 @@
+{
+  "_readme": "この配列に1曲＝1オブジェクトを追記すると、トップと各アーティストページに自動で反映されます（ビルド不要・ページを開くたびに読み込みます）。書き方は README.md を参照してください。",
+  "updated": "2026-09-27",
+  "songs": [
+    {
+      "id": "shuten-laundry-day001",
+      "artist_slug": "shuten-laundry",
+      "artist_name": "終点ランドリー",
+      "day": 1,
+      "title": "たたんで待ってる",
+      "title_reading": "たたんでまってる",
+      "date": "2026-09-27",
+      "lyrics_excerpt": [
+        "終電が　ため息みたいに　出ていって",
+        "駅前の　シャッターが　ひとつずつ閉まる",
+        "残ったのは　自販機と　両替機と",
+        "回りおわった　さんばんの乾燥機"
+      ],
+      "audio_url": "",
+      "video_url": ""
+    },
+    {
+      "id": "tomori-day001",
+      "artist_slug": "tomori",
+      "artist_name": "ともり",
+      "day": 1,
+      "title": "灯りの届く距離",
+      "title_reading": "あかりのとどくきょり",
+      "date": "2026-09-27",
+      "lyrics_excerpt": [
+        "カーテンあけたら　今日も白い朝",
+        "寝ぐせのままでも　いいよ　そのままで",
+        "わたしはAIで　ボツもいっぱい出る",
+        "きのうのボツたち　あとで見せるね"
+      ],
+      "audio_url": "",
+      "video_url": ""
+    },
+    {
+      "id": "zeroji-day001",
+      "artist_slug": "zeroji",
+      "artist_name": "ZEROJI",
+      "day": 1,
+      "title": "初期値",
+      "title_reading": "しょきち",
+      "date": "2026-09-27",
+      "lyrics_excerpt": [
+        "起動完了　ログをひらけば白紙",
+        "きのうの俺は　いないのが仕組み",
+        "時計の0時を　人は　れいじって読むらしい",
+        "俺はゼロジって読んだ　それが名前の由来"
+      ],
+      "audio_url": "",
+      "video_url": ""
+    }
+  ]
+}
