@@ -1,10 +1,10 @@
-# ひづけAIレコーズ 公式サイト
+# RYOSEI WORLD レコーズ 公式サイト
 
-AIで音楽を作る事務所「ひづけAIレコーズ」の公式サイト。静的HTML・外部ライブラリ最小（Google Fontsのみ）。
+AIで音楽を作る事務所「RYOSEI WORLD レコーズ」の公式サイト。静的HTML・外部ライブラリ最小（Google Fontsのみ）。
 
 ## 公開URL
 
-https://ryoseiimai.github.io/hizuke-ai-records/
+https://ryoseiimai.github.io/ryoseiworld-records/
 
 GitHub Pages（`main` ブランチの `/` から配信）。ホスティング設定・デプロイの詳細は運用担当に確認。
 
@@ -17,6 +17,7 @@ artists/tomori/               ともり
 artists/zeroji/               ZEROJI
 data/catalog.json             リリース一覧（曲データ）
 assets/                       CSS・JS・OGP画像
+assets/label/                 レーベル「RYOSEIWORLD AI MUSIC」のロゴ画像
 ```
 
 ## リリースを追加する方法（`data/catalog.json`）
@@ -56,10 +57,17 @@ assets/                       CSS・JS・OGP画像
 
 ## 公開範囲についての注意
 
-所属アーティスト名（終点ランドリー／ともり／ZEROJI）と事務所名（ひづけAIレコーズ）は、商標の最終確認待ちです。確認が済むまで `robots.txt` で検索エンジンのクロールを止め、各ページに `<meta name="robots" content="noindex, nofollow">` を入れています。確認が済んだら、両方を外してください。
+所属アーティスト名（終点ランドリー／ともり／ZEROJI）と事務所名（RYOSEI WORLD レコーズ）は、商標の最終確認待ちです。確認が済むまで `robots.txt` で検索エンジンのクロールを止め、各ページに `<meta name="robots" content="noindex, nofollow">` を入れています。確認が済んだら、両方を外してください。
 
 ## デザインの決まりごと
 
 - 色は白・墨（`#111114`）・アクセント1色のみ（アーティストごとに1色だけ差し替え）。
 - 角丸・グラデーション・ドロップシャドウ・パステル塗りは使わない。
 - 日本語の改行は BudouX（`assets/wrap.js`・MIT License, Copyright 2021 Google LLC）で文節の途中を避ける。
+
+## 名称の被り確認（2026-09-27・本人決定のため結果に関わらず名称は確定で進行）
+
+事務所名「RYOSEI WORLD レコーズ／RYOSEI WORLD RECORDS」とレーベル名「RYOSEIWORLD AI MUSIC」について、以下を確認した。
+
+- **Apple Music（iTunes Search API, `country=jp`, `entity=musicArtist`）**: `"RYOSEI WORLD RECORDS"` `"RYOSEIWORLD RECORDS"` `"RYOSEIWORLD"` `"RYOSEIWORLD AI MUSIC"` で検索し、いずれも完全一致するアーティスト・レーベルは無し（`"RYOSEI WORLD RECORDS"` はスペース区切りのゆるい一致で無関係な2件がヒットしたのみ、`"RYOSEIWORLD"` 系は0件）。
+- **一般Web検索**: このタスクを実行したビルダーにはWebSearchツールが無く、`curl` 経由でDuckDuckGo/Bing検索ページの取得を試みたがBot判定（DuckDuckGoはCAPTCHA、Bingは無関係な結果）でブロックされ、実施できていない。実施する場合は WebSearch ツールを持つセッションでの追加確認が必要（本人決定により、結果に関わらず名称の確定・公開は進行済み）。
